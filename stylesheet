@@ -1,0 +1,191 @@
+html, body {
+    height: auto;
+    margin: 0;                  
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    background: lightblue;
+    color: darkblue;
+  }
+
+  body {
+    position: relative;
+    display: flex;
+    flex-direction: column;          
+    padding-top: 60px;       
+  }
+       
+
+  /* NAV */
+  nav {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: auto;
+    background: darkblue;
+    padding: 0.5rem 0.5rem;
+    z-index: 1000;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none; /* Removed the bullet format */
+    align-items: center;
+    gap: 1rem;                  
+    margin: 0;
+  }
+
+  nav a {
+    text-decoration: none; /* Removed the hyperlink format */
+    color: white;
+    font-weight: bold;
+    padding: .5rem 1.5rem .5rem .5rem;
+    border-right: .5px solid rgba(255,255,255,0.8);
+    text-align: center;
+    margin: 0;
+  }
+
+ nav a:hover {
+  background-color: blue;
+  color: white;
+}
+
+  /* ASIDE */
+  aside {
+    position: fixed;
+    top: 50px; right: 1rem;
+    width: auto;
+  }
+
+h1 {
+  margin: .5rem 0;         
+  text-align: center; 
+  font-size: 40px; 
+  text-shadow: 3px 3px 3px grey; 
+  padding: 10px;
+}
+
+h2 {
+  margin: 1rem 0;         
+  text-align: center; 
+}
+
+h3 {
+  margin: .5rem 0;         
+  text-align: center; 
+  font-size: 20px; 
+  padding: 3px;
+}
+
+main {
+  text-align: center;
+  flex: 1;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+th, td { 
+  padding: 8px 12px;       
+  text-align: left;
+}
+
+
+
+ form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: .5rem;
+      width: 250px;
+      float: right;
+      margin-right: 30%;
+      text-align: left;
+    }
+
+    label { 
+      font-size: 1.1rem;
+      font-weight: bold; 
+      width: 125px;
+    }
+    
+
+    input, button {
+      width: 250px;
+      padding: .5rem .5rem;
+      border-radius: 5px;
+      border: 1px solid rgba(0,0,139,.25);
+      outline: none;
+      
+    }
+    textarea { 
+  grid-column: 1;
+  span 2;
+  width: 250px;           
+  min-height: 120px;      
+  resize: vertical;
+  padding: .5rem .5rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0,0,139,.25);
+  outline: none;
+    }
+    
+
+    button {
+      color: white;
+      background: darkblue;
+      cursor: pointer;
+      border: none;
+      font-weight: bold;
+      width: 265px;
+      grid-column: 2;
+      span 2;
+    }
+
+ button:hover {
+  background-color: blue;
+  color: white;
+}
+
+ figure {
+  margin: .5rem 0;         
+  text-align: center;  
+}
+
+ #figure2 {
+  margin: .5rem 0 .5rem 20rem;         
+  text-align: center;  
+}
+
+ #hero-img {
+ box-shadow: 3px 3px 3px grey;
+}
+
+figcaption {
+  font-style: italic;       
+  color: darkblue;                 
+  text-align: center; 
+  padding: 12px 0;      
+}
+
+#figcaption2 {
+  margin: 1rem 0 1rem 25rem;         
+  text-align: left; 
+}
+
+
+  /* FOOTER */
+  footer {
+    position: fixed;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: darkblue;
+    color: lightblue;
+  }
